@@ -34,11 +34,11 @@ PathFinders::PathFinders(char ch)
     myGraph[3].push_back(make_pair(0,2));
     myGraph[4].push_back(make_pair(3,6));
     printList();
-    cout<<"For Dijkstra algorithm"<<endl;
+    cout<<endl<<"For Dijkstra algorithm"<<endl;
     dijkstra();
-    cout<<"For Belmann Ford algorithm"<<endl;
+    cout<<endl<<"For Belmann Ford algorithm"<<endl;
     belmann();
-    cout<<"For Floyd Warshall algorithm"<<endl;
+    cout<<endl<<"For Floyd Warshall algorithm"<<endl;
     allPath();
 }
 
@@ -391,7 +391,8 @@ void PathFinders::allPath()
 int main()
 {
     PathFinders obj2('*');
-    cout<<"Now its your turn"<<endl;
+    cout<<endl;
+    cout<<"Now its your turn"<<endl<<endl;
     PathFinders obj1;
     obj1.process();
     return 0;
